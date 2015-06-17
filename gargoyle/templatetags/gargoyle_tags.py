@@ -12,6 +12,9 @@ from gargoyle import gargoyle
 
 register = template.Library()
 
+@register.filter
+def switch_active(name):
+    return gargoyle.is_active(name)
 
 @register.tag
 def ifswitch(parser, token):
