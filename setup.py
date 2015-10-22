@@ -8,7 +8,7 @@ except:
     pass
 
 tests_require = [
-    'Django>=1.2,<1.6',
+    'Django>=1.4,<1.8',
     'django-nose',
     'nose',
     'South',
@@ -17,16 +17,16 @@ tests_require = [
 install_requires = [
     'django-modeldict>=1.2.0',
     'nexus>=0.2.3',
-    'django-jsonfield>=0.8.0,<0.9.14',
+    'django-jsonfield>=0.9.2,<0.9.13',
 ]
 
 
 setup(
     name='gargoyle',
-    version='0.10.9',
+    version='0.11.0',
     author='DISQUS',
     author_email='opensource@disqus.com',
-    url='http://github.com/disqus/gargoyle',
+    url='https://github.com/disqus/gargoyle',
     description='Gargoyle is a platform built on top of Django which allows you to switch functionality of your application on and off based on conditions.',
     packages=find_packages(exclude=["example_project", "tests"]),
     zip_safe=False,
