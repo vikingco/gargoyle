@@ -6,10 +6,7 @@ gargoyle.templatetags.gargoyle_helpers
 :license: Apache License 2.0, see LICENSE for more details.
 """
 
-try:
-    from django.template import base as template_base
-except ImportError:
-    from django import template as template_base
+from django import template as template_base
 
 register = template_base.Library()
 
