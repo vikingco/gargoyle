@@ -16,15 +16,7 @@ except ImportError:
     now = datetime.datetime.now
 
 from jsonfield import JSONField
-
-DISABLED = 1
-SELECTIVE = 2
-GLOBAL = 3
-INHERIT = 4
-
-INCLUDE = 'i'
-EXCLUDE = 'e'
-
+from .constants import DISABLED, EXCLUDE, GLOBAL, INCLUDE, INHERIT, SELECTIVE
 
 class Switch(models.Model):
     """
